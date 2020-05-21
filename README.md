@@ -17,7 +17,7 @@ For this version, follow the steps below to build LLVM:
 
 * After compilation, include the path to the LLVM binaries in your shell: `export PATH=$PATH:/HOME/llv3.7.1.src/build/Release+Asserts/bin`
 
-## FlowTracker
+## Tool
 
 Clone the repository to `/HOME/llvm37/lib/Transforms/` and also to `/HOME/llvm-3.7.1.src/build/lib/Transforms/`
 Now, you must compile each of the passes that constitute Flow Tracker:
