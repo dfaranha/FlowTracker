@@ -1,5 +1,7 @@
 # FlowTracker
 
+FlowTracker is a tool to detect variable-timing behavior in C code using the LLVM framework.
+
 Build instructions for an older version can be found [here](http://cuda.dcc.ufmg.br/flowtrackervsferrante/install.html).
 
 ## LLVM
