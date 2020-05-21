@@ -8,6 +8,11 @@ For this version, follow the steps below to build LLVM:
 * Extract `llvm-3.7.1.src.tar.xz` in your HOME directory. Now, extract `cfe-3.7.1.src.tar.xz` and rename `cfe-3.7.0.src` as clang like `/HOME/llvm-3.7.1-src/tool/clang`
 * Create a folder named `build` in `/HOME/llvm-3.7.1.src` and inside this build folder, you must configure the sources like below.
 * Type `../configure --disable-bindings` at /HOME/llvm-3.7.1.src/build. After the configuration script finished its execution, you must run `make`
+* You might have to patch line 102 of `include/llvm/IR/ValueMap.h` with:
+```
+  bool hasMD() const { return bool(MDMap); }
+```
+
 * After compilation, include the path to the LLVM binaries in your shell: `export PATH=$PATH:/HOME/llv3.7.1.src/build/Release+Asserts/bin`
 
 ## FlowTracker
